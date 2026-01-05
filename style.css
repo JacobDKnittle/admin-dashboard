@@ -23,6 +23,7 @@ header {
     background-color: white;
     padding: 10px 50px;
     gap: 20px;
+    box-shadow: 5px 5px 10px rgb(207, 209, 217);
 }
 
 .profile-section {
@@ -154,6 +155,11 @@ nav {
     align-items: center;
 }
 
+.project-cards-section h1, .announcements-section h2, .trending-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 main {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -174,11 +180,13 @@ main {
     grid-column: 1 / 2;
 }
 
+
 .project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    margin-top: 20px;
+    min-height: 770px;
+    
 }
 
 .project-cards img{
@@ -186,10 +194,11 @@ main {
 }
 
 .project-cards .icons {
-    padding-top: 20px;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 50px);
     justify-content: end;
+    align-items: end;
 }
 
 .card {
@@ -197,7 +206,7 @@ main {
     padding: 30px;
     border-radius: 10px;
     border-left: 12px solid rgb(240, 180, 41);
-    box-shadow: rgb(209, 215, 222) 1px 1px 5px;
+    box-shadow: 5px 5px 10px rgb(207, 209, 217);
 }
 
 .card p {
@@ -209,11 +218,13 @@ main {
     grid-column: 2 / 3;
 }
 
+
 .announcement-cards {
     background-color: white;
     padding: 0 30px 0 30px;
     font-size: 12px;
-    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(207, 209, 217);
 }
 
 .announcement-cards li {
@@ -246,7 +257,8 @@ main {
     gap: 30px;
     background-color: white;
     padding: 30px;
-    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgb(207, 209, 217);
 }
 
 .individual-profile {
