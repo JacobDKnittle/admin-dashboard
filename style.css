@@ -11,7 +11,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 9fr;
-    grid-template-rows: 2fr 7fr;
+    grid-template-rows: 2fr 8fr;
 }
 
 header {
@@ -21,8 +21,8 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: white;
-    padding: 30px 50px;
-    gap: 50px;
+    padding: 10px 50px;
+    gap: 20px;
 }
 
 .profile-section {
@@ -181,10 +181,27 @@ main {
     margin-top: 20px;
 }
 
+.project-cards img{
+    width: 30px;
+}
+
+.project-cards .icons {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-content: end;
+}
+
 .card {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    border-left: 12px solid rgb(240, 180, 41);
+    box-shadow: rgb(209, 215, 222) 1px 1px 5px;
+}
+
+.card p {
+    color: gray;
 }
 
 .announcements-section {
@@ -194,9 +211,28 @@ main {
 
 .announcement-cards {
     background-color: white;
-    padding: 30px;
+    padding: 0 30px 0 30px;
     font-size: 12px;
     margin-top: 20px;
+}
+
+.announcement-cards li {
+    border-bottom: 1px solid lightgray;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.announcement-cards li:last-of-type {
+    border: none;
+}
+
+.announcement-cards h4 {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+.announcement-cards p {
+    color: gray;
 }
 
 .trending-section {
