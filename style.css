@@ -7,9 +7,6 @@
     font-family: "Roboto", sans-serif;
 }
 
-
-
-
 .layout-container {
     display: grid;
     height: 100vh;
@@ -24,7 +21,7 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: white;
-    padding: 30px 80px;
+    padding: 30px 50px;
     gap: 50px;
 }
 
@@ -37,14 +34,30 @@ header {
 
 .left-profile-section {
     display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
     grid-column: 1 / 2;
+}
+
+.left-profile-section img {
+    width: 30px;
 }
 
 .right-profile-section {
     display: grid;
     grid-column: 2 / 3;
+    grid-template-columns: 50px 75px 1fr;
+    align-items: center;
     justify-self: end;
-    align-self: center;
+    font-weight: bold;
+}
+
+.right-profile-section img {
+    width: 30px;
+}
+
+.right-profile-section .small-profile-icon {
+    width: 60px;
 }
 
 input {
@@ -52,6 +65,7 @@ input {
     background-color: rgb(226, 232, 240);
     border: none;
     border-radius: 20px;
+    height: 35px;
 }
 
 nav {
@@ -59,18 +73,40 @@ nav {
     grid-column: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.greeting-section {
+    display: grid;
+    grid-template-columns: 100px 400px;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    
+}
+
+.greeting {
+    font-size: 16px;
+}
+
+.greeting .username {
+    font-size: 28px;
+}
+
+.greeting-section img {
+    width: 100px;
 }
 
 .nav-links ul {
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: repeat(3, 1fr);
     justify-self: end;
 }
 
 .nav-links a {
     background-color: rgb(25, 145, 205);
     color: white;
-    padding: 8px 24px;
+    padding: 10px 32px;
     border-radius: 20px;
 }
 
@@ -175,4 +211,15 @@ main {
     background-color: white;
     padding: 30px;
     margin-top: 20px;
+}
+
+.individual-profile {
+    display: grid;
+    align-items: center;
+    column-gap: 20px;
+    grid-template-columns: 50px 150px;
+}
+
+.trending-cards img {
+    width: 50px;
 }
